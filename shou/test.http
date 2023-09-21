@@ -1,0 +1,36 @@
+POST http://192.168.31.183:80/api/set_angle
+Content-Type: application/json
+
+{
+    "num": 2,
+    "angle": 0
+}
+
+###
+POST http://192.168.31.183:80/api/set_angle
+Content-Type: application/json
+
+{
+    "num": 3,
+    "angle": 0
+}
+
+###
+POST http://192.168.31.183:80/api/set_angle
+Content-Type: application/json
+
+{
+    "num": 3,
+    "angle": 60
+}
+
+###
+POST http://192.168.31.183:80/api/set_angles
+Content-Type: application/json
+
+{
+    "data": [{
+            "num": 3,
+            "angle": 60
+        }]
+}
