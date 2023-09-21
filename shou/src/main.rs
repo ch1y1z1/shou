@@ -28,6 +28,9 @@ use serde::Deserialize;
 
 use crate::wifi::connect_wifi;
 
+const SSID: &str = "818";
+const PASSWORD: &str = "12345678";
+
 fn main() -> anyhow::Result<()> {
     esp_idf_sys::link_patches();
     esp_idf_svc::log::EspLogger::initialize_default();
@@ -41,7 +44,7 @@ fn main() -> anyhow::Result<()> {
         sys_loop,
     )?;
 
-    connect_wifi(&mut wifi, "818", "18251710519")?;
+    connect_wifi(&mut wifi, SSID, PASSWORD)?;
     let ip_info = wifi.wifi().sta_netif().get_ip_info()?;
     info!("Wifi DHCP info: {:?}", ip_info);
 
