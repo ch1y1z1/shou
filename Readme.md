@@ -2,6 +2,9 @@
 
 ## 预览
 
+bilibili:
+[手势跟踪机械手 rust+esp32](https://www.bilibili.com/video/BV1fu4y1r7MC/?share_source=copy_web&vd_source=634e8589b5cb94f8cf1c0173305b8f90)
+
 ![](gif.gif)
 
 ## 编译
